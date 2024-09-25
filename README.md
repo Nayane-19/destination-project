@@ -1,26 +1,30 @@
 # Travel Destinations
 
-Este é um aplicativo React com TypeScript que permite aos usuários pesquisar destinos de viagem e visualizar detalhes sobre eles. O aplicativo também sugere destinos próximos com base no destino selecionado.
+This is a React application with TypeScript that allows users to search for travel destinations and view details about them. The application also suggests nearby destinations based on the selected destination.
 
-## Decisões de Design
+## Design Decisions
 
-- **React com TypeScript**: Escolhido para garantir segurança de tipos e melhor manutenção do código.
-- **React Query**: Utilizado para gerenciar o estado da busca de dados de forma eficiente.
-- **Context API**: Utilizado para gerenciar o estado global do destino selecionado.
-- **ShadCN**: Utilizado para fornecer componentes de interface do usuário acessíveis e estilizados.
-- **Estrutura de componentes**: Dividido em componentes pequenos e reutilizáveis para melhor organização.
-- **API Falsa**: Simula a busca de dados para facilitar o desenvolvimento e testes.
+- **React with TypeScript**: Chosen to ensure type safety and better code maintenance.
+- **React Query**: Used to efficiently manage data fetching state.
+- **Context API**: Used to manage the global state of the selected destination.
+- **ShadCN**: Used to provide accessible and styled UI components.
+- **Component Structure**: Divided into small, reusable components for better organization.
+- **Fake API**: Simulates data fetching to facilitate development and testing.
 
-## Funcionalidades
+## Features
 
-- Pesquisa de destinos com caixa de combinação assíncrona.
-- Exibição de detalhes do destino selecionado.
-- Sugestão de destinos próximos.
-- Tratamento de erros e indicadores de carregamento.
+- Search for destinations with an asynchronous combo box.
+- Display details of the selected destination.
+- Suggest nearby destinations.
+- Error handling and loading indicators.
 
-## Como Executar
+## How to Run
 
-1. Clone o repositório.
-2. Execute `npm install` para instalar as dependências.
-3. Execute `npm start` para iniciar o aplicativo.
+1. Clone the repository.
+2. Run `npm install` to install dependencies.
+3. Run `npm start` to start the application.
+
+## Links
+
+- [Link to deployed application](https://master--destination-nayane.netlify.app/)
 
