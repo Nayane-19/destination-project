@@ -1,50 +1,26 @@
-# React + TypeScript + Vite
+# Travel Destinations
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um aplicativo React com TypeScript que permite aos usuários pesquisar destinos de viagem e visualizar detalhes sobre eles. O aplicativo também sugere destinos próximos com base no destino selecionado.
 
-Currently, two official plugins are available:
+## Decisões de Design
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React com TypeScript**: Escolhido para garantir segurança de tipos e melhor manutenção do código.
+- **React Query**: Utilizado para gerenciar o estado da busca de dados de forma eficiente.
+- **Context API**: Utilizado para gerenciar o estado global do destino selecionado.
+- **ShadCN**: Utilizado para fornecer componentes de interface do usuário acessíveis e estilizados.
+- **Estrutura de componentes**: Dividido em componentes pequenos e reutilizáveis para melhor organização.
+- **API Falsa**: Simula a busca de dados para facilitar o desenvolvimento e testes.
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Pesquisa de destinos com caixa de combinação assíncrona.
+- Exibição de detalhes do destino selecionado.
+- Sugestão de destinos próximos.
+- Tratamento de erros e indicadores de carregamento.
 
-- Configure the top-level `parserOptions` property like this:
+## Como Executar
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Clone o repositório.
+2. Execute `npm install` para instalar as dependências.
+3. Execute `npm start` para iniciar o aplicativo.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
